@@ -1,7 +1,16 @@
-# Laravel-python
-This packages is python implementation for laravel framework.
+# LaraPy
+A python implementation of laravel framework for machine learning, AI, datascience and data intensive work.
+
+### Features
+* **MVC** Framework
+* **Routing**
+* **jinja 2** templating engine.
 
 ### Serve app
 ```
 gunicorn server:app -b :8080 
+```
+### Testing
+```
+python -m pytest
 ```
