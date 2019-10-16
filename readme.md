@@ -13,4 +13,7 @@ gunicorn server:app -b :8080
 ### Testing
 ```
 python -m pytest
+
+# With out Network 
+python -m pytest -m "not network" 
 ```

@@ -9,6 +9,7 @@ jinja2 = "*"
 requests = "*"
 gunicorn = "*"
 setuptools = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 black = "*"

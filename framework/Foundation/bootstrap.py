@@ -1,6 +1,7 @@
 from framework.Foundation.app import Application
 import importlib
 from config.app import config
+from config.database import database
 from framework.Foundation.Router import Router
 from framework.Foundation.Request import Request
 from framework.Foundation.Response import Response

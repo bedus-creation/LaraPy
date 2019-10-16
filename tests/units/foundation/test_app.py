@@ -17,4 +17,4 @@ class TestApp():
 
     def test_bind_function(self):
         Application.bind('config', config)
-        assert Application.get('config')['database']['name'] == 'mytodo'
+        assert Application.get('config')['basePath'] == '/path'
