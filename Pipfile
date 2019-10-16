@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "*"
+jinja2 = "*"
+requests = "*"
+gunicorn = "*"
+setuptools = "*"
+
+[dev-packages]
+black = "*"
+autopep8 = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
