@@ -10,6 +10,7 @@ requests = "*"
 gunicorn = "*"
 setuptools = "*"
 sqlalchemy = "*"
+werkzeug = "*"
 
 [dev-packages]
 black = "*"

@@ -1,5 +1,6 @@
 import importlib
 from framework.Foundation.app import Application
+from werkzeug.exceptions import HTTPException
 
 
 class Router:
@@ -25,7 +26,7 @@ class Router:
         if uri in Router.routes[requestType].keys():
             data = Router.routes[requestType][uri].split('@')
             return self.callAction(data[0], data[1])
-        raise Exception('Routes not defined yet.')
+        raise HTTPException('Routes not defined yet.')
 
     def callAction(self, controllerClass, action):
         controller = 'app.Http.Controllers.' + controllerClass
