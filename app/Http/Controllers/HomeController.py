@@ -1,5 +1,5 @@
-from framework.Foundation.app import Application
-from framework.view.view import View
+from Chamak.Foundation.app import Application
+from Chamak.view.view import View
 
 
 class HomeController:

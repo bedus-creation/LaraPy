@@ -12,6 +12,7 @@ setuptools = "*"
 sqlalchemy = "*"
 werkzeug = "*"
 webob = "*"
+chamak = "==0.0.6"
 
 [dev-packages]
 black = "*"

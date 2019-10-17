@@ -1,4 +1,4 @@
-from framework.Foundation.Router import Router
+from Chamak.Foundation.Router import Router
 
 # Define Your routes here.
 Router.get('/', 'HomeController@index')
