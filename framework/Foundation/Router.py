@@ -1,6 +1,7 @@
 import importlib
 from framework.Foundation.app import Application
 from werkzeug.exceptions import HTTPException
+from framework.Foundation.FileReponse import FileReponse
 
 
 class Router:
@@ -23,6 +24,9 @@ class Router:
         return Router()
 
     def direct(self, uri, requestType):
+        if FileReponse.is_static(uri):
+            return FileReponse().make_response("public/"+uri)
+
         if uri in Router.routes[requestType].keys():
             data = Router.routes[requestType][uri].split('@')
             return self.callAction(data[0], data[1])

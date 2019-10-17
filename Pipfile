@@ -11,6 +11,7 @@ gunicorn = "*"
 setuptools = "*"
 sqlalchemy = "*"
 werkzeug = "*"
+webob = "*"
 
 [dev-packages]
 black = "*"

@@ -8,7 +8,7 @@ A python implementation of laravel framework for machine learning, AI, datascien
 
 ### Serve app
 ```
-gunicorn server:app -b :8080 
+python serve
 ```
 ### Testing
 ```
